@@ -70,25 +70,32 @@ public class aula2Pessoa {
     
         public void Imprimir(){
             System.out.println("\nNome: "+ this.nome);
+     /*
             System.out.println("Nasceu no dia " +
                     this.dataDeNascimento.dia() + "/" +
                     this.dataDeNascimento.mes() + "/" +
                     this.dataDeNascimento.ano());
-            System.out.println("Altura:" + this.altura);
+ */
+    System.out.print("\nData de nascimento: ");
+    this.dataDeNascimento.Imprimir();// chamando metodo imprimit
+System.out.println("Altura:" + this.altura);
 
         }
         
         // static é porque essa função não precisa de ser executada, algo necessaria para uma "main"
         public static void main(String[] args){
+            //intancia, e não seta valores
             aula2Pessoa p1 = new aula2Pessoa();
-            p1.setNome("Gordom");
-            aula2Data d = new aula2Data(24,3,2003);
+            //Apartir de agora seta
+            p1.setNome("Gordom Beruga");
+            //Data é um objeto, obviamente
+            aula2Data d = new aula2Data(24,3,23);
             p1.setDataDeNascimento(d);
-            p1.setAltura(1.67f);
+            p1.setAltura(0.3f);
             
             
             p1.Imprimir();
-            
+            // intancia nova data adicionando tal valor, mesma coisa da linha (93?)
             System.out.println("Idade "+ p1.CalcularIdade(new aula2Data(25, 06, 2023)));
 
         }

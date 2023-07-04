@@ -10,6 +10,8 @@
 
 // tudo dentro desta classe aula2Data
     public class aula2Data {
+        // "final" depois que se coloca uma vaiavel não muda mais
+        // Nenhuma atribuição fora do modo construtor
         private final int dia;
         private final int mes;
         private final int ano;
@@ -36,6 +38,8 @@
     //Resposta: result = a > b ? x : y;
     //boolean statement ? true result : false result;
     //Resposta final= é para que fique "01","04" e não "1", "4"
+   
+    //Ps: não utilizado no final das contas
     public void Imprimir(){
         System.out.println((dia < 10 ? "0"+ dia : dia)+"/"+(mes <10 ? "0"+ mes : mes) + "/" + ano);
     }

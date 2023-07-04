@@ -1,2 +1,1 @@
-aula2Pessoa.aula2Pessoa
 aula2Pessoa
